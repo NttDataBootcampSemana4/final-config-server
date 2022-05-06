@@ -5,4 +5,5 @@ eureka:
     fetch-registry: 'false'
     register-with-eureka: 'false'
     service-url:
-      defaultZone: ${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: ${eureka.instance.hostname}:${server.port}
+      #defaultZone: ${eureka.instance.hostname}:${server.port}/eureka/
