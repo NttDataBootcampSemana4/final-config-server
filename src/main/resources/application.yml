@@ -1,0 +1,17 @@
+server:
+  port: 7000
+
+spring:
+  banner:
+    location: classpath:banner/banner.txt
+    image:
+      location: classpath:fotocreador/microservicios.png
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+         git:
+          default-label: master
+          uri: https://github.com/NttDataBootcampSemana4/final-config-server          
+          search-paths: config-data
